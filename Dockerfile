@@ -13,7 +13,7 @@ ENV TERM xterm
 ADD aliyun-mirror.repo /etc/yum.repos.d/CentOS-Base.repo
 ADD aliyun-epel.repo /etc/yum.repos.d/epel.repo
 
-RUN yum install -y curl wget tar gzip zlib zlib-devel openssl openssl-devel pcre-devel bzip2 unzip vim-enhanced passwd sudo yum-utils hostname net-tools httpd rsync man && \
+RUN yum install -y curl wget tar gzip zlib zlib-devel openssl openssl-devel pcre-devel bzip2 unzip vim-enhanced vim passwd sudo yum-utils hostname net-tools rsync man && \
     yum install -y gcc gcc-c++ git make automake autofonf cmake patch logrotate python-devel libpng-devel libjpeg-devel && \
     yum install -y --enablerepo=epel pwgen python-pip && \
     yum clean all
