@@ -4,7 +4,7 @@
 #
 # Dockerizing CentOS7: Dockerfile for building CentOS images
 #
-FROM       centos:latest
+FROM       centos:7.2.1511
 MAINTAINER Terry.Li,<libin2722@sohu.com>
 
 ENV TZ "Asia/Shanghai"
